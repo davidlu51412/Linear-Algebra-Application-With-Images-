@@ -2,7 +2,7 @@ load dluface.mat
 % It will load the img_names variable into variables list. 
 % you can check it by typing whos in command window
 X = GREYFACE;
-X = X(772:end,:); 
+X = X(773:end,:); 
 % NOTE: Only works for a square matrix, so we resize X to square Matrix
 % X's data typeis uint8
 % CONVERSION of DIFF TYPES: MATRIX = uint8(SOME MATRIX);
