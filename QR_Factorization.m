@@ -3,9 +3,11 @@ load dluface.mat
 % you can check it by typing whos in command window
 X = GREYFACE;
 X = X(772:end,:); 
-% RESIZE TO SQUARE MATRIX
-% X's DATA TYPE IS UINT8
+% NOTE: Only works for a square matrix, so we resize X to square Matrix
+% X's data typeis uint8
 % CONVERSION of DIFF TYPES: MATRIX = uint8(SOME MATRIX);
+
+
 
 
 disp('QR FACTORIZATION');
