@@ -3,6 +3,7 @@ function [X] = decompressIMG(compIMG)
     m = 31;
     n = 24;
     X = zeros(m, n);
+    X = double(X);
     cLen = length(compIMG);
     counter = 1;
     for i=1:m
