@@ -1,6 +1,6 @@
 pkg load image
 
-faceNum = 6;
+faceNum = 8;
 m = 31;
 n = 24;
 allDluFaces = zeros(m*n, faceNum);

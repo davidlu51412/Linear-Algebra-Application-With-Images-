@@ -16,7 +16,7 @@ origX = 31;
 origY = 24;
 
 % number of photos I have
-numPhotos = 6;
+numPhotos = 8;
 
 displayData(X, numPhotos);
 title('original photos');
@@ -41,7 +41,7 @@ SIGMA = (1 / m) * X_normalized * X_normalized';
 [U S V] = svd(SIGMA);
 
 
-numDispEigVecs = 6;
+numDispEigVecs = 8;
 
 % for some reason displayData does not work for the 1st eigenvector. I will use a simpler loop
 % h = displayData(U, numDispEigVecs);
@@ -53,7 +53,6 @@ for i = 1:numDispEigVecs;
     imagesc(temp);
     title('eigenvectors');
     axis image off
-
 end
 
 
@@ -61,7 +60,7 @@ end
 % we want to reduce to this dimension
 
 % right now since I have 6 photos, I have N = 6, and I want to convert it to a lower dimension;2
-k = 5;
+k = 6;
 
 U_reduce = U(:, 1:k);
 Z = U_reduce' * X_normalized;
