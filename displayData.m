@@ -1,6 +1,13 @@
 function [h, display_arr] = displayData(X, numIters)
-origRow = 31;
-origCol = 24;
+
+% This is for .01 img resize
+% origRow = 31;
+% origCol = 24;
+
+% This is for .05 img resize
+origRow = 155;
+origCol = 116;
+
 padding = 1;
 paddingVert = 2;
 paddingHoriz = numIters + 1;

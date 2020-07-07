@@ -11,10 +11,6 @@ MEANSUM = sum(X) / m;
 X_normalized = X - MEANSUM;
 
 
-% dimensions of original images after being scaled down by .01 for efficiency purposes
-origX = 31;
-origY = 24;
-
 % number of photos I have
 numPhotos = 8;
 
