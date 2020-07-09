@@ -1,12 +1,12 @@
 function [h, display_arr] = displayData(X, numIters)
 
 % This is for .01 img resize
-origRow = 31;
-origCol = 24;
+% origRow = 31;
+% origCol = 24;
 
 % This is for .03 img resize
-% origRow = 93;
-% origCol = 70;
+origRow = 93;
+origCol = 70;
 
 % This is for .05 img resize
 % origRow = 155;
@@ -23,7 +23,7 @@ currCol = 2;
 currRow = 2;
 %we are putting it in one row, so we dont have to really change currRow;
 for i = 1:numIters;
-    temp = decompressIMG(X(:, i)');
+    temp = decompressIMG(X(i, :));
 	rowBorder = origRow + 1;
 	colBorder = currCol + origCol - 1;
 	display_arr(currRow:rowBorder, currCol:colBorder) = temp;
