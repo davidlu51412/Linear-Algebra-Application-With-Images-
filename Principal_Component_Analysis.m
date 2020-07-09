@@ -55,8 +55,8 @@ end
 % reduce from N-DIMENSIONS to K-DIMENSIONS. So Find Vectors U1, U2, ..., UK to minimize projection error, 
 % we want to reduce to this dimension
 
-% right now since I have 6 photos, I have N = 6, and I want to convert it to a lower dimension;2
-k = 6;
+% I want to convert it to a lower dimension
+k = 7;
 
 U_reduce = U(:, 1:k);
 Z = U_reduce' * X_normalized;
