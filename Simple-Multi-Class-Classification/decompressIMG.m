@@ -6,12 +6,12 @@ function [X] = decompressIMG(compIMG)
     % n = 24;
 
     % This is for .03 img resize
-    m = 93;
-    n = 70;
+    % m = 93;
+    % n = 70;
    
     % This is for .05 img resize
-    % m = 155;
-    % n = 116;
+    m = 155;
+    n = 116;
     
     X = zeros(m, n);
     X = double(X);

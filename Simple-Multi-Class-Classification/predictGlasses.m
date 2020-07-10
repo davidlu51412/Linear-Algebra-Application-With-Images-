@@ -1,11 +1,11 @@
 load('theta.mat');
-load('testGlassDlu.mat')
-testy = [1; 0];
+load('testGlassDlu.mat');
+load('HDtestGlassDlu.mat');
 
 %X is going to be some other images of my face
 X = testGlassDlu;
 X = [ones(size(X,1), 1) X];
-
+HDIMG = HDtestGlass;
 finalProbability = sigmoid(X * theta);
 [m n] = size(X);
 
@@ -17,7 +17,7 @@ for i=1:m
     else 
         disp('David is not wearing glasses');
     end
-    temp = X(i,:);
+    temp = HDIMG(i,:);
     temp = decompressIMG(temp);
     imshow(uint8(temp));
     pause;
