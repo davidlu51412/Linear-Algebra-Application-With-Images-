@@ -4,14 +4,22 @@ function [X] = decompressIMG(compIMG)
     % This is for .01 img resize
     % m = 31;
     % n = 24;
+    
+    % this is for .01 img resize; FOR FRONT CAMERA
+    m = 41;
+    n = 31;
 
     % This is for .03 img resize
     % m = 93;
     % n = 70;
    
     % This is for .05 img resize
-    m = 155;
-    n = 116;
+    % m = 155;
+    % n = 116;
+
+    % This is for .1 img resize FRONT CAMERA
+    % m = 303;
+    % n = 404;
     
     X = zeros(m, n);
     X = double(X);

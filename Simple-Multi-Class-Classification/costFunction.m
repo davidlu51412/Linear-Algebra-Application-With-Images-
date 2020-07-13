@@ -1,8 +1,7 @@
 function [jVal, gradient] = costFunction(theta, X, y, lambda)
     m = size(X,1);
     hypo_probability = sigmoid(X * theta);
-    % gives us a 37 x 1 matrix
-    % y is a 37 X 1 matrix
+    % gives us a #examples X 1 matrix
     hypo = hypo_probability;
 
     % compute regularization
@@ -14,5 +13,5 @@ function [jVal, gradient] = costFunction(theta, X, y, lambda)
 
     % Accounting for regularization
     regThetaAdd = lambda * theta / m;
-    gradient(2:end) += regThetaAdd(2:end);
+    gradient(2:end) = gradient(2:end) + regThetaAdd(2:end);
 end

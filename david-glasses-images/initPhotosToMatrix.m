@@ -27,4 +27,4 @@ for i=1:faceNum
     glassesDlu(i,:) = tempIMG;
 end
 
-save('glassesDlu.mat', 'glassesDlu');
+save('RPS.mat', 'RPS');
